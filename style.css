@@ -1,0 +1,198 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background: url('Guest\ Space\ Design\ -\ gamal\ abd\ elhameed.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    padding-left: 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.categories {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+}
+
+.category {
+    text-align: center;
+}
+
+.category a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.category img:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    margin: 10px 0;
+}
+
+.images-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.images-section img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+.login-container, .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('Salon\ vert\ sauge\ _\ 15\ idées\ déco\ pour\ réussir\ votre\ espace.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(8px);
+}
+
+.login-box, .register-box {
+    background-color: rgba(224, 224, 224, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login-box h2, .register-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input, .register-box input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button, .register-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover, .register-box button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images-section img {
+        width: 90%;
+    }
+
+    .hero {
+        height: 200px;
+        padding-left: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-box, .register-box {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+}
