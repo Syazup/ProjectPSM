@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -98,12 +97,16 @@ nav ul li a {
     display: flex;
     gap: 10px;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
 .images-section img {
-    width: 30%;
+    width: 100%;
+    max-width: 400px;
     border-radius: 5px;
+    flex: 1 1 calc(33% - 10px);
+    box-sizing: border-box;
 }
 
 .login-container, .register-container {
@@ -165,7 +168,7 @@ footer {
     }
 
     .images-section img {
-        width: 90%;
+        flex: 1 1 90%;
     }
 
     .hero {
@@ -197,6 +200,11 @@ footer {
     }
 
     .images-section img {
-        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .login-container img {
+        max-width: 90%;
+        height: auto;
     }
 }
